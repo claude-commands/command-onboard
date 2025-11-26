@@ -10,16 +10,16 @@ git clone git@github.com:claude-commands/command-onboard.git <clone-path>/comman
 
 # Symlink (use full path to cloned repo)
 ln -s <clone-path>/command-onboard/onboard.md ~/.claude/commands/onboard.md
-```
+```text
 
 ## Usage
 
-```
+```text
 /onboard              # Full project overview
 /onboard api          # Focus on API layer
 /onboard auth         # Focus on authentication
 /onboard database     # Focus on data layer
-```
+```text
 
 ## What it does
 
@@ -50,21 +50,24 @@ A Node.js API for managing user content...
 npm install
 cp .env.example .env
 npm run dev
-```
+```text
 
 ## Project Structure
-```
+
+```text
 src/
 ├── api/        # Routes and controllers
 ├── services/   # Business logic
 ├── models/     # Database models
 └── utils/      # Shared utilities
-```
+```text
 
 ## Cheat Sheet
+
 - Add endpoint: Edit `src/api/routes.ts`
 - Add migration: `npm run db:migration:create`
-```
+
+```text
 
 ## Focus Areas
 
@@ -84,4 +87,4 @@ src/
 
 ```bash
 cd <clone-path>/command-onboard && git pull
-```
+```text

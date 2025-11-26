@@ -12,12 +12,14 @@ Generate a comprehensive project overview for onboarding.
 **Usage:** `/onboard [focus-area]`
 
 **Examples:**
+
 - `/onboard` - Full project overview
 - `/onboard api` - Focus on API layer
 - `/onboard auth` - Focus on authentication
 - `/onboard database` - Focus on data layer
 
 **Workflow:**
+
 1. Analyze project structure and tech stack
 2. Identify key architectural patterns
 3. Map out important files and directories
@@ -46,7 +48,7 @@ Generate a focused onboarding guide for the specified area.
 
    # Count files by type
    fd -e ts -e js -e go -e py | wc -l
-   ```
+   ```text
 
    Identify:
    - Project type (web app, API, CLI, library)
@@ -81,10 +83,12 @@ Generate a focused onboarding guide for the specified area.
 4. **Map Architecture**
 
    Create a mental model:
+
    ```markdown
    ## Architecture Overview
 
-   ```
+   ```text
+
    ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
    │   Client    │────▶│   API       │────▶│  Database   │
    │  (React)    │     │  (Express)  │     │  (Postgres) │
@@ -95,14 +99,15 @@ Generate a focused onboarding guide for the specified area.
                        │   Cache     │
                        │   (Redis)   │
                        └─────────────┘
-   ```
+
+   ```text
 
    ### Data Flow
    1. Client makes request
    2. API validates and processes
    3. Database query/mutation
    4. Response returned
-   ```
+   ```text
 
 5. **Document Key Patterns**
 
@@ -139,7 +144,7 @@ Generate a focused onboarding guide for the specified area.
 
    # Start development
    npm run dev
-   ```
+   ```text
 
    ## Key Commands
 
@@ -152,7 +157,7 @@ Generate a focused onboarding guide for the specified area.
 
    ## Project Structure
 
-   ```
+   ```text
    src/
    ├── api/          # API routes and controllers
    ├── services/     # Business logic
@@ -160,8 +165,9 @@ Generate a focused onboarding guide for the specified area.
    ├── middleware/   # Express middleware
    ├── utils/        # Shared utilities
    └── config/       # Configuration
-   ```
-   ```
+   ```text
+
+   ```text
 
 7. **Generate Cheat Sheet**
 
@@ -202,7 +208,7 @@ Generate a focused onboarding guide for the specified area.
    1. Create migration: `npm run db:migration:create`
    2. Edit migration file
    3. Run: `npm run db:migrate`
-   ```
+   ```text
 
 8. **Area-Specific Deep Dive**
 
@@ -251,7 +257,7 @@ Generate a focused onboarding guide for the specified area.
 
 ## Next Steps
 [Suggested areas to explore]
-```
+```text
 
 ## Notes
 
